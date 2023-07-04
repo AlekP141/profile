@@ -1,0 +1,44 @@
+// WHOLE PAGE
+.whole-page {
+  background-color: $secondary;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-page {
+  display: none;
+  margin: 2.5%;
+  border: 1px solid $primary;
+  position: relative;
+  padding: 2.5%;
+}
+
+*{
+  color: $primary;
+}
+
+//INITIAL SCREEN
+
+.initial-title {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.initial-block {
+  text-align: center;
+}
+
+// BANNER
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.light-dark-toggle {
+
+}
