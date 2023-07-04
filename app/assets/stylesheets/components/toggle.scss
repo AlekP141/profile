@@ -56,3 +56,8 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
+.toggle-icon {
+  font-size: 1.5em;
+  margin: 0 5px;
+}

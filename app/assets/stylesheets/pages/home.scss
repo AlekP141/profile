@@ -1,15 +1,18 @@
 // WHOLE PAGE
+
+.hidden {
+  display: none !important;
+}
+
 .whole-page {
   background-color: $secondary;
   min-height: 100vh;
   width: 100%;
+  padding: 2.5%;
 }
 
 .main-page {
-  display: none;
-  margin: 2.5%;
   border: 1px solid $primary;
-  position: relative;
   padding: 2.5%;
 }
 
@@ -40,5 +43,6 @@
 
 
 .light-dark-toggle {
-
+ display: flex;
+ align-items: center;
 }
