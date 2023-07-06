@@ -6,7 +6,7 @@
   pointer-events: auto;
   cursor: pointer;
   &:hover {
-    color: #CE6A85;
+    color: #f146ab !important;
   }
 }
 
@@ -18,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #CE6A85;
+  background-color: #f146ab;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
 }

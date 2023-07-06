@@ -66,6 +66,12 @@
 .banner-links {
   display: block;
   margin: 1rem 0;
+  a {
+    margin: 0.5rem 0;
+  }
+  p {
+    margin: 0.5rem 0;
+  }
 }
 
 // BIO
@@ -96,4 +102,8 @@
 .card-hover {
   border-style: solid;
   border-width: 4px;
+}
+
+.one {
+  color: orange
 }
