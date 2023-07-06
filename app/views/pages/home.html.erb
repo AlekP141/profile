@@ -1,7 +1,7 @@
 <div class="whole-page secondary-background primary">
   <div class="initial-title hidden">
     <div class="initial-block">
-      <h1 class="initial-title-name underline">Alek Pialucha</h1>
+      <h1 class="initial-title-name underline pink">Alek Pialucha</h1>
       <h4 class="initial-title-subtitle">Portfolio</h4>
     </div>
   </div>
@@ -14,13 +14,26 @@
     <div class="main-page-container primary-border">
       <div class="banner">
         <div class="name-container">
-          <h1 class="main-page-name">Alek Pialucha</h1>
+          <h1 class="main-page-name pink">Alek Pialucha</h1>
           <h4 class="main-page-subtitle">Full Stack Developer</h4>
         </div>
         <div class="banner-links">
           <a class="primary underline" href="mailto: pialuchaa@btinternet.com">Contact</a>
           <br>
-          <p id="cv" class="underline">Full CV</p>
+          <p id="openModal" class="underline">Full CV</p>
+
+          <!-- The Modal -->
+          <div id="modal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <iframe src="https://drive.google.com/file/d/1iX1cFrJANnbQzTfdSIpfaJDG5psSymF6/preview" width="100%" height="100%" allow="autoplay"></iframe>
+            </div>
+
+          </div>
+
+
         </div>
       </div>
       <div class="bio">
@@ -30,9 +43,19 @@
     </div>
     <div class="projects-container primary-border">
       <h2>PROJECTS</h2>
-      <div class="project-card primary-border">
-        <h3 class="underline">BarHop</h3>
-        <h6>Le Wagon, 2023</h6>
+      <div class="project-card primary-border underline-div">
+        <div class="card-title">
+          <h3 class="underline">BarHop</h3>
+          <h6>Le Wagon, 2023</h6>
+        </div>
+        <div class="more-info">
+          <div class="project-images">
+            <%= image_tag ("barhop/homepage.jpg") %>
+            <%= image_tag ("barhop/indexpage.jpg") %>
+            <%= image_tag ("barhop/generate_route.jpg") %>
+            <%= image_tag ("barhop/routes.jpg") %>
+          </div>
+        </div>
       </div>
       <div class="project-card primary-border">
         <h3 class="underline">Render</h3>

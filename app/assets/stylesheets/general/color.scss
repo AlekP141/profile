@@ -1,5 +1,6 @@
 $primary: #ebebeb;
 $secondary: #151515;
+$pink: #f146ab;
 
 .primary {
   color: $primary;
@@ -16,4 +17,8 @@ $secondary: #151515;
 }
 .secondary-background {
   background-color: $secondary;
+}
+
+.pink {
+  color: $pink;
 }

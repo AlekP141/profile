@@ -1,49 +1,34 @@
  /* Underline styles */
- .underline {
+.underline {
   display: inline-flex;
   position: relative;
   padding: 0.1em 0;
   pointer-events: auto;
   cursor: pointer;
+  overflow: hidden;
   &:hover {
     color: #f146ab !important;
   }
-}
-
-
-.underline::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #f146ab;
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-}
-
-.underline:hover::after,
-.underline:focus::after {
-  opacity: 1;
-  transform: translate3d(0, 0.2em, 0);
-}
-
-/* Slide in */
-.underline {
-  overflow: hidden;
-}
-
-.underline::after {
-  opacity: 1;
-  transform: translate3d(-101%, 0, 0);
-}
-
-.underline:hover::after,
-.underline:focus::after{
-  transform: translate3d(0, 0, 0);
-}
-
-.test {
-  color: red
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #f146ab;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  &:hover::after, &:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+  }
+  &::after {
+    opacity: 1;
+    transform: translate3d(-101%, 0, 0);
+  }
+  &:hover::after, &:focus::after {
+    transform: translate3d(0, 0, 0);
+  }
 }
