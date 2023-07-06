@@ -1,2 +1,19 @@
-$primary: #ebebeb!important;
-$secondary: #151515!important;
+$primary: #ebebeb;
+$secondary: #151515;
+
+.primary {
+  color: $primary;
+  &:hover {
+    color: $primary;
+  }
+}
+.primary-border {
+  border-color: $primary;
+}
+
+.secondary {
+  color: $secondary;
+}
+.secondary-background {
+  background-color: $secondary;
+}
