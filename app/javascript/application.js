@@ -67,4 +67,23 @@ window.onclick = function(event) {
   }
 }
 
-console.log("modal")
+console.log("modal");
+
+
+// PROJECT CARD
+
+const projectCard = document.querySelectorAll(".project-card");
+
+projectCard.forEach(el => {
+  console.log(el)
+  el.addEventListener("click", (e) => {
+    const info = el.querySelector(".more-info")
+    info.classList.toggle("hidden")
+    const title = el.querySelector(".card-title")
+    if (title.style.paddingBottom === "2.5rem") {
+      title.style.paddingBottom = "1.5rem"
+    } else {
+      title.style.paddingBottom = "2.5rem"
+    }
+  });
+});
