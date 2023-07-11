@@ -96,3 +96,14 @@ projectCard.forEach(el => {
     // }
   });
 });
+
+const experienceToggle = document.querySelector("#experience-toggle")
+const allExperience = document.querySelector(".all-experience")
+experienceToggle.addEventListener("click", (e) => {
+  allExperience.classList.toggle("hidden")
+  if (experienceToggle.innerHTML === "Show All") {
+    experienceToggle.innerHTML = "Collapse"
+  } else {
+    experienceToggle.innerHTML = "Show All"
+  }
+})

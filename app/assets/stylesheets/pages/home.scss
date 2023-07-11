@@ -25,6 +25,11 @@
   cursor: default;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .icon-md {
   font-size: 2.5rem;
 }
@@ -85,6 +90,17 @@
   z-index: 2;
   width: 50%;
 }
+
+// TECH STACK
+
+.tech-stack-container {
+  padding: 2.5%;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+
 
 // PROJECT CARDS
 
@@ -203,4 +219,39 @@
   color: $pink;
   text-decoration: none;
   cursor: pointer;
+}
+
+// EXPERIENCE
+
+.experience-container {
+  padding: 2.5%;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+
+.experience-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.experience-card {
+  margin: 2.5% 0;
+  ul {
+    list-style: none;
+    li::before {
+      display: inline-block;
+      content: "\25AA";
+      color: $pink;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
 }
