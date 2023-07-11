@@ -349,3 +349,21 @@ a {
   right: -50%;
   transform: translateX(-50%);
 }
+
+#ripples {
+  width: 95%;
+  height: calc(100vh - 5vw);
+  overflow: hidden;
+  position: absolute;
+  left: 2.5%;
+  top: calc(2.5vw + 24px + 0.2em);
+  canvas {
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: -1 !important;
+    // transform: translate(50%, -50%);
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+}
