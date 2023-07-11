@@ -17,15 +17,12 @@
           <div class="name-container">
             <h1 class="main-page-name pink">Alek Pialucha</h1>
             <h4 class="main-page-subtitle">Full Stack Developer</h4>
-            <p id="openModal" class="underline">View Full CV</p>
             <div class="socials">
               <a href="https://github.com/AlekP141" target="_blank"><i class="icon-md uil uil-github primary pink-hover" style="cursor:pointer"></i></a>
               <a href="https://www.linkedin.com/in/apialucha/" target="_blank"><i class="icon-md uil uil-linkedin primary pink-hover" style="cursor: pointer"></i></a>
             </div>
           </div>
           <div class="banner-links">
-            <a class="primary underline" href="mailto: pialuchaa@btinternet.com">Contact</a>
-            <br>
             <p id="openModal" class="underline">View Full CV</p>
 
             <!-- Modal -->
@@ -37,6 +34,18 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="navigation">
+          <h2>SECTIONS</h2>
+          <ul>
+            <li class="underline" id="techStack">Tech Stack</li>
+            <br>
+            <li class="underline" id="projects">Projects</li>
+            <br>
+            <li class="underline" id="proExp">Professional Experience</li>
+            <br>
+            <li class="underline" id="edu">Education</li>
+          </ul>
         </div>
         <ul class="fireflies" id="firefly-container">
           <li></li>
@@ -60,18 +69,6 @@
           <li></li>
           <li></li>
         </ul>
-        <%# <div class="stars">
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-        </div> %>
         <div class="bio-container">
           <div class="bio">
             <h2>BIO</h2>
@@ -80,7 +77,7 @@
           <div class="down-arrow"></div>
         </div>
       </div>
-      <div class="tech-stack-container">
+      <div class="tech-stack-container" id="techContainer">
         <h2>TECH STACK</h2>
         <div class="tech-container">
           <p>Tech I am proficient in:</p>
@@ -139,7 +136,7 @@
           </div>
         </div>
       </div>
-      <div class="projects-container primary-border">
+      <div class="projects-container primary-border" id="projContainer">
         <h2>PROJECTS</h2>
         <div class="project-card">
           <div class="card-title primary-border">
@@ -208,7 +205,7 @@
           </div>
         </div>
       </div>
-      <div class="experience-container primary-border">
+      <div class="experience-container primary-border" id="proExpContainer">
         <div class="experience-title">
         <h2>PROFESSIONAL EXPERIENCE</h2>
         <h5 id="experience-toggle" class="underline">Show All</h5>
@@ -257,7 +254,7 @@
         </div>
       </div>
 
-      <div class="education-container primary-border">
+      <div class="education-container primary-border" id="eduContainer">
         <div class="education-title">
         <h2>EDUCATION</h2>
         <h5 id="education-toggle" class="underline">Show All</h5>

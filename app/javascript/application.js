@@ -80,7 +80,6 @@ console.log("modal");
 const projectCard = document.querySelectorAll(".project-card");
 
 projectCard.forEach(el => {
-  console.log(el)
   el.addEventListener("click", (e) => {
     const info = el.querySelector(".more-info")
     info.classList.toggle("hidden")
@@ -140,4 +139,28 @@ initialTitle.addEventListener("animationend", (e) => {
   allContent.classList.remove("hidden")
   console.log("showing")
   allContent.classList.add("all-content-show")
+})
+
+const techStack = document.getElementById("techStack")
+const proj = document.getElementById("projects")
+const proExp = document.getElementById("proExp")
+const edu = document.getElementById("edu")
+
+techStack.addEventListener("click", () => {
+  document.querySelector("#techContainer").scrollIntoView();
+})
+
+proj.addEventListener("click", () => {
+  projectCard.forEach(el => el.click())
+  document.querySelector("#projContainer").scrollIntoView();
+})
+
+proExp.addEventListener("click", () => {
+  experienceToggle.click()
+  document.querySelector("#proExpContainer").scrollIntoView();
+})
+
+edu.addEventListener("click", () => {
+  educationToggle.click()
+  document.querySelector("#eduContainer").scrollIntoView();
 })
