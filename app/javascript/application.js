@@ -124,3 +124,9 @@ const downArrow = document.querySelector(".down-arrow")
 downArrow.addEventListener("click", (e) => {
   window.scrollBy(0, window.innerHeight)
 })
+
+
+const returnTop = document.querySelector(".return")
+returnTop.addEventListener("click", (e) => {
+  window.scrollTo(0, 0)
+})

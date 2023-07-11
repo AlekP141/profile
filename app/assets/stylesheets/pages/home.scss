@@ -322,6 +322,9 @@ a {
   justify-content: space-between;
 }
 
-.one {
-  font-size: 6px;
+.return {
+  margin-top: 1rem;
+  cursor: pointer;
+  right: -50%;
+  transform: translateX(-50%);
 }
