@@ -59,7 +59,7 @@ a {
 
 .initial-title {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 5vw);
   display: flex;
   justify-content: center;
   align-items: center;
