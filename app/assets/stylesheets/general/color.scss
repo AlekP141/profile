@@ -22,3 +22,15 @@ $pink: #f146ab;
 .pink {
   color: $pink;
 }
+
+.pink-hover {
+  &:hover {
+    color: $pink !important;
+  }
+}
+
+.pink-border-hover {
+  &:hover {
+    border-color: $pink !important;
+  }
+}

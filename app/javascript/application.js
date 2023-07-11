@@ -1,5 +1,10 @@
 console.log("test")
 
+window.onload =() => {
+  console.log("moving")
+  window.scrollTo(0, 0);
+}
+
 const light = document.querySelector("#light")
 const dark = document.querySelector("#dark")
 
@@ -79,11 +84,15 @@ projectCard.forEach(el => {
   el.addEventListener("click", (e) => {
     const info = el.querySelector(".more-info")
     info.classList.toggle("hidden")
-    const title = el.querySelector(".card-title")
-    if (title.style.paddingBottom === "2.5rem") {
-      title.style.paddingBottom = "1.5rem"
-    } else {
-      title.style.paddingBottom = "2.5rem"
-    }
+    // const title = el.querySelector(".card-title")
+    // if (title.style.paddingBottom === "2.5rem") {
+    //   console.log(title.style.paddingBottom)
+    //   console.log("if")
+    //   title.style.paddingBottom = "1.5rem"
+    // } else {
+    //   console.log(title.style.paddingBottom)
+    //   console.log("else")
+    //   title.style.paddingBottom = "2.5rem"
+    // }
   });
 });
