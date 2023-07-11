@@ -130,3 +130,14 @@ const returnTop = document.querySelector(".return")
 returnTop.addEventListener("click", (e) => {
   window.scrollTo(0, 0)
 })
+
+const initialTitle = document.querySelector(".initial-title")
+const allContent = document.querySelector(".all-content")
+
+initialTitle.addEventListener("animationend", (e) => {
+  initialTitle.classList.add("hidden")
+  console.log("removing hidden")
+  allContent.classList.remove("hidden")
+  console.log("showing")
+  allContent.classList.add("all-content-show")
+})
