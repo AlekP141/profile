@@ -41,6 +41,7 @@
 
 // BANNER
 .banner {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,6 +79,7 @@
 // BIO
 
 .bio {
+  z-index: 2;
   width: 50%;
 }
 
@@ -176,15 +178,4 @@
   color: $pink;
   text-decoration: none;
   cursor: pointer;
-}
-
-
-.one {
-  color: purple;
-}
-.two {
-  color: pink;
-}
-.three {
-  color: black;
 }
