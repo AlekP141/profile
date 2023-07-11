@@ -1,5 +1,9 @@
 // WHOLE PAGE
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hidden {
   display: none !important;
 }
@@ -75,7 +79,6 @@ a {
 
 .banner-links {
   display: block;
-  margin: 1rem 0;
   a {
     margin: 0.5rem 0;
   }
@@ -91,6 +94,11 @@ a {
   width: 50%;
 }
 
+.bio-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 // TECH STACK
 
 .tech-stack-container {
@@ -101,6 +109,21 @@ a {
   border-left-width: 1px;
 }
 
+.tech-container {
+  p {
+    // margin-top: 2rem;
+  }
+}
+
+.tech-list {
+  margin-bottom: 2rem;
+  a{
+    margin: 0 0.2rem;
+    img {
+      cursor: pointer;
+    }
+  }
+}
 
 // PROJECT CARDS
 
@@ -158,12 +181,17 @@ a {
   }
 }
 
+.project-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .project-links {
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
   & > * {
     margin: 0 0.5rem;
   }
@@ -238,7 +266,7 @@ a {
 }
 
 .experience-card {
-  margin: 2.5% 0;
+  margin-top: 2.5%;
   ul {
     list-style: none;
     li::before {
@@ -263,8 +291,10 @@ a {
   padding: 2.5%;
   border-right-style: solid;
   border-left-style: solid;
+  border-bottom-style: solid;
   border-right-width: 1px;
   border-left-width: 1px;
+  border-bottom-width: 1px;
 }
 
 .education-title {
@@ -274,7 +304,7 @@ a {
 }
 
 .education-card {
-  margin: 2.5% 0;
+  margin-top: 2.5%;
   ul {
     list-style: none;
     li::before {
@@ -290,4 +320,8 @@ a {
 .education-header {
   display: flex;
   justify-content: space-between;
+}
+
+.one {
+  font-size: 6px;
 }

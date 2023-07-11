@@ -118,3 +118,9 @@ educationToggle.addEventListener("click", (e) => {
     educationToggle.innerHTML = "Show All"
   }
 })
+
+
+const downArrow = document.querySelector(".down-arrow")
+downArrow.addEventListener("click", (e) => {
+  window.scrollBy(0, window.innerHeight)
+})
