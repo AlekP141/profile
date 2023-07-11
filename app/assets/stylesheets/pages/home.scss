@@ -255,3 +255,39 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+
+// EDUCATION
+
+.education-container {
+  padding: 2.5%;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+
+.education-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.education-card {
+  margin: 2.5% 0;
+  ul {
+    list-style: none;
+    li::before {
+      display: inline-block;
+      content: "\25AA";
+      color: $pink;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+}

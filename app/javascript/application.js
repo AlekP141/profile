@@ -107,3 +107,14 @@ experienceToggle.addEventListener("click", (e) => {
     experienceToggle.innerHTML = "Show All"
   }
 })
+
+const educationToggle = document.querySelector("#education-toggle")
+const allEducation = document.querySelector(".all-education")
+educationToggle.addEventListener("click", (e) => {
+  allEducation.classList.toggle("hidden")
+  if (educationToggle.innerHTML === "Show All") {
+    educationToggle.innerHTML = "Collapse"
+  } else {
+    educationToggle.innerHTML = "Show All"
+  }
+})
