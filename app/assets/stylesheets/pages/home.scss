@@ -11,6 +11,7 @@
 }
 
 .main-page-container {
+  overflow: hidden;
   border-style: solid;
   border-width: 1px 1px 0 1px;
   padding: 2.5%;
@@ -179,5 +180,11 @@
 
 
 .one {
-  color: blue;
+  color: purple;
+}
+.two {
+  color: pink;
+}
+.three {
+  color: black;
 }
