@@ -364,3 +364,9 @@ a {
   right: -50%;
   transform: translateX(-50%);
 }
+
+@media only screen and (max-height: 750px) {
+  .navigation {
+    display: none;
+  }
+}
